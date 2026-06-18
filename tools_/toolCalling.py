@@ -63,5 +63,4 @@ if result.tool_calls:
     print(final_response.content)
 
 else:
-    # If no tool was needed
     print(result.content)
