@@ -156,11 +156,18 @@ while True:
                     )
                 )
 
-            # Let LLM continue after seeing tool result
             continue
 
         else:
-            # Final answer from LLM
+            # Final answer from 
             print(result.content)
             break
 
+#
+# Execute Tool
+#      ↓
+# ToolMessage
+#      ↓
+# LLM Reads Tool Output
+#      ↓
+# Final Answer
