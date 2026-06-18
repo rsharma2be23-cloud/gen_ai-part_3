@@ -58,9 +58,11 @@ if result.tool_calls:
     # 7. Second LLM call
     # LLM uses tool output to generate final answer
     final_response = llm_with_tool.invoke(messages)
+    # LLM uses tool output to generate final answer
 
     print("\n[bold green]Final Answer:[/bold green]")
     print(final_response.content)
 
 else:
+    # If no tool was needed
     print(result.content)
